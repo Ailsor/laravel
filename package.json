@@ -1,0 +1,25 @@
+{
+  "name": "laravel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "npm install",
+    "build": "babel ./src --out-dir ./dist",
+    "predev": "npm install",
+    "dev": "node ./index",
+    "prestart": "npm run build",
+    "start": "node ./dist/app"   
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "nunjucks": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-register": "^6.18.0"
+  }
+}
